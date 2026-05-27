@@ -1,0 +1,13 @@
+id: jetson-nano
+name: NVIDIA Jetson Nano
+ram_gb: 4
+cpu: ARM Cortex-A57
+cpu_cores: 4
+arch: aarch64
+gpu: Maxwell 128-core
+recommended_quant: int4
+max_model_size_gb: 3.5
+backends:
+  - llama.cpp
+  - TensorRT
+notes: "GPU acceleration via CUDA/TensorRT. Best for vision+LLM hybrid workloads."

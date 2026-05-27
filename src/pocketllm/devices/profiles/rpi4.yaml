@@ -1,0 +1,12 @@
+id: rpi4
+name: Raspberry Pi 4
+ram_gb: 4
+cpu: ARM Cortex-A72
+cpu_cores: 4
+arch: aarch64
+gpu: none
+recommended_quant: int4
+max_model_size_gb: 3.2
+backends:
+  - llama.cpp
+notes: "4GB model only. Stick to sub-1B models for usable speed."

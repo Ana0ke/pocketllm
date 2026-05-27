@@ -1,0 +1,13 @@
+id: android-mid
+name: Android (Mid-range, 8GB)
+ram_gb: 8
+cpu: ARM Cortex-A715 / X3
+cpu_cores: 8
+arch: aarch64
+gpu: Adreno / Mali (NPU available)
+recommended_quant: mnn-int4
+max_model_size_gb: 5.0
+backends:
+  - MNN
+  - llama.cpp
+notes: "Typical mid-range 2024+ Android phone. MNN recommended for NPU utilization."

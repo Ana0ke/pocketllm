@@ -1,0 +1,13 @@
+id: jetson-orin-nano
+name: NVIDIA Jetson Orin Nano
+ram_gb: 8
+cpu: ARM Cortex-A78AE
+cpu_cores: 6
+arch: aarch64
+gpu: Ampere 1024-core
+recommended_quant: int4
+max_model_size_gb: 6.5
+backends:
+  - llama.cpp
+  - TensorRT
+notes: "Significant upgrade over Jetson Nano. TensorRT LLM support."

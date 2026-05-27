@@ -1,0 +1,15 @@
+[Unit]
+Description=PocketLLM LLM Server
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/opt/pocketllm
+EnvironmentFile=/opt/pocketllm/config.env
+ExecStart=/usr/local/bin/llama-server -m ${MODEL_FILE} -t ${THREADS} -c ${CONTEXT_SIZE} --host ${HOST} --port ${PORT}
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

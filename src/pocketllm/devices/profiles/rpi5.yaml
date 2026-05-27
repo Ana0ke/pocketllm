@@ -1,0 +1,13 @@
+id: rpi5
+name: Raspberry Pi 5
+ram_gb: 8
+cpu: ARM Cortex-A76
+cpu_cores: 4
+arch: aarch64
+gpu: none
+recommended_quant: int4
+max_model_size_gb: 6.5
+backends:
+  - llama.cpp
+  - MNN
+notes: "Best performing Pi yet. 8GB model recommended for LLM inference."

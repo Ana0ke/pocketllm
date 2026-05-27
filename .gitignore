@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Model files (large)
+*.gguf
+*.safetensors
+*.bin
+!tests/fixtures/*.gguf
+
+# Output
+output/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
